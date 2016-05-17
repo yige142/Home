@@ -1,995 +1,968 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Yige142.GitHub.io by yige142</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Yige142.GitHub.io</h1>
+      <h2 class="project-tagline">谢小毛的WebDemo</h2>
+    </section>
 
-<head>
-<link href="DemoCSS.css" rel=stylesheet type="text/css">
-	<link href="layout.css" rel=stylesheet type="text/css">
-	<link href="normalize.css" rel=stylesheet type="text/css">
-<meta http-equiv="Content-Type" content="text/html; charset=Utf-8" />
-<script src="jqueryjs/jquery.js"></script>
-	<script type="text/javascript" src="jqueryjs/jquery.min.js"></script>
-	<script type="text/javascript" src="jqueryjs/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="jqueryjs/jquery.mixitup.min.js"></script>
+    <section class="main-content">
+      <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd%22%3E">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</a></p>
 
-	<script type="text/javascript">
-		$(function () {
+<p></p>
 
-			var filterList = {
-
-				init: function () {
-
-					// MixItUp plugin
-					$('#portfoliolist').mixitup({
-						targetSelector: '.portfolio',
-						filterSelector: '.filter',
-						effects: ['fade'],
-						easing: 'snap',
-						// call the hover effect
-						onMixEnd: filterList.hoverEffect()
-					});
-
-				},
-
-				hoverEffect: function () {
-
-					// Simple parallax effect
-					$('#portfoliolist .portfolio').hover(
-							function () {
-								$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-								$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
-							},
-							function () {
-								$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-								$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
-							}
-					);
-
-				}
-
-			};
-
-			// Run the show!
-			filterList.init();
+    
+    
 
 
-		});
-	</script>
 
-<title>Demo</title>
 
-</head>
+<pre><code>&lt;script type="text/javascript" src="jqueryjs/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="jqueryjs/jquery.easing.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="jqueryjs/jquery.mixitup.min.js"&gt;&lt;/script&gt;
 
-<body  >
-<div class="float">
-	<ul>
-		<li class="float_li">
-			顶部
-		</li>
-		<li class="float_li">
-			服务
-		</li>
-		<li class="float_li">
-			案例
-		</li>
-		<li class="float_li">
-			优势
-		</li>
-		<li class="float_li">
-			客服
-		</li>
-		<li class="float_li">
-			团队
-		</li>
-		<li class="float_li">
-			圈子
-		</li>
-		<li class="float_li">
-			联系
-		</li>
-		<li class="float_li">
-			品质
-		</li>
+&lt;script type="text/javascript"&gt;
+    $(function () {
 
-	</ul>
+        var filterList = {
+
+            init: function () {
+
+                // MixItUp plugin
+                $('#portfoliolist').mixitup({
+                    targetSelector: '.portfolio',
+                    filterSelector: '.filter',
+                    effects: ['fade'],
+                    easing: 'snap',
+                    // call the hover effect
+                    onMixEnd: filterList.hoverEffect()
+                });
+
+            },
+
+            hoverEffect: function () {
+
+                // Simple parallax effect
+                $('#portfoliolist .portfolio').hover(
+                        function () {
+                            $(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+                            $(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+                        },
+                        function () {
+                            $(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+                            $(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+                        }
+                );
+
+            }
+
+        };
+
+        // Run the show!
+        filterList.init();
+
+
+    });
+&lt;/script&gt;
+</code></pre>
+
+<p></p>Demo
+
+<p></p>
+
+<p></p>
+
+<div>
+    <ul>
+        <li>
+            顶部
+        </li>
+        <li>
+            服务
+        </li>
+        <li>
+            案例
+        </li>
+        <li>
+            优势
+        </li>
+        <li>
+            客服
+        </li>
+        <li>
+            团队
+        </li>
+        <li>
+            圈子
+        </li>
+        <li>
+            联系
+        </li>
+        <li>
+            品质
+        </li>
+
+    </ul>
 </div>
 
-	<div id="floor3">
-		<div class="floor3">
-			<div class="top">
-				<div class="top_en">
-					SUPERIORITY
-				</div>
-				<div class="top_cn">
-				   <span >
-						<b class="floor3ziti">优势之道  素谓天成</b>
-				   </span>
-				</div>
-			</div>
+<pre><code>&lt;div id="floor3"&gt;
+    &lt;div class="floor3"&gt;
+        &lt;div class="top"&gt;
+            &lt;div class="top_en"&gt;
+                SUPERIORITY
+            &lt;/div&gt;
+            &lt;div class="top_cn"&gt;
+               &lt;span &gt;
+                    &lt;b class="floor3ziti"&gt;优势之道  素谓天成&lt;/b&gt;
+               &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
 
 
 
-			<div class="priorities">
-				<div class="containerl">
-					<div class="num_wrap">
-						<div class="num_box">
-						   <div class="num_li">
-							   <div class="num_bg"></div>
-							   <div class="num_line"></div>
-							   <div   class="num timer count-title" id="count-number" data-to="120" data-speed="1500" >300</div>
-							   <h3 class="floor3ziti" >300</h3>
+        &lt;div class="priorities"&gt;
+            &lt;div class="containerl"&gt;
+                &lt;div class="num_wrap"&gt;
+                    &lt;div class="num_box"&gt;
+                       &lt;div class="num_li"&gt;
+                           &lt;div class="num_bg"&gt;&lt;/div&gt;
+                           &lt;div class="num_line"&gt;&lt;/div&gt;
+                           &lt;div   class="num timer count-title" id="count-number" data-to="120" data-speed="1500" &gt;300&lt;/div&gt;
+                           &lt;h3 class="floor3ziti" &gt;300&lt;/h3&gt;
 
 
-						   </div>
-						</div>
-						<div class="num_box">
-							<div class="num_li">
-								<div class="num_bg"></div>
-								<div class="num_line"></div>
-								<div class="num timer count-title" id="count-number" data-to="80" data-speed="1500" >13</div>
-								<h3 class="floor3ziti">13道工序</h3>
-							</div>
-						</div>
-						<div class="num_box">
-							<div class="num_li">
-								<div class="num_bg"></div>
-								<div class="num_line"></div>
-								<div class="num timer count-title" id="count-number" data-to="66" data-speed="1500" >14</div>
-								<h3 class="floor3ziti" >14道工序</h3>
-							</div>
-						</div>
-						<div class="num_box">
-							<div class="num_li">
-								<div class="num_bg"></div>
-								<div class="num_line"></div>
-								<div class="num timer count-title" id="count-number" data-to="70" data-speed="1500" >15</div>
-								<h3 class="floor3ziti">15道工序</h3>
-							</div>
-						</div>
-						<div class="num_box">
-							<div class="num_li">
-								<div class="num_bg"></div>
-								<div class="num_line"></div>
-								<div class="num timer count-title" id="count-number" data-to="99" data-speed="1500" >16</div>
-								<h3 class="floor3ziti">16道工序</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                       &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="num_box"&gt;
+                        &lt;div class="num_li"&gt;
+                            &lt;div class="num_bg"&gt;&lt;/div&gt;
+                            &lt;div class="num_line"&gt;&lt;/div&gt;
+                            &lt;div class="num timer count-title" id="count-number" data-to="80" data-speed="1500" &gt;13&lt;/div&gt;
+                            &lt;h3 class="floor3ziti"&gt;13道工序&lt;/h3&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="num_box"&gt;
+                        &lt;div class="num_li"&gt;
+                            &lt;div class="num_bg"&gt;&lt;/div&gt;
+                            &lt;div class="num_line"&gt;&lt;/div&gt;
+                            &lt;div class="num timer count-title" id="count-number" data-to="66" data-speed="1500" &gt;14&lt;/div&gt;
+                            &lt;h3 class="floor3ziti" &gt;14道工序&lt;/h3&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="num_box"&gt;
+                        &lt;div class="num_li"&gt;
+                            &lt;div class="num_bg"&gt;&lt;/div&gt;
+                            &lt;div class="num_line"&gt;&lt;/div&gt;
+                            &lt;div class="num timer count-title" id="count-number" data-to="70" data-speed="1500" &gt;15&lt;/div&gt;
+                            &lt;h3 class="floor3ziti"&gt;15道工序&lt;/h3&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="num_box"&gt;
+                        &lt;div class="num_li"&gt;
+                            &lt;div class="num_bg"&gt;&lt;/div&gt;
+                            &lt;div class="num_line"&gt;&lt;/div&gt;
+                            &lt;div class="num timer count-title" id="count-number" data-to="99" data-speed="1500" &gt;16&lt;/div&gt;
+                            &lt;h3 class="floor3ziti"&gt;16道工序&lt;/h3&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
 
-	   </div>
-	</div>
+   &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
 <div id="floor1">
-<div class="floor1">
-<div class="top">
-		   <div class="top_en">
-			  BUSINESS 
-		   </div>
-		   <div class="top_cn">
-			   <span class="span_b">
-					<b>服务之道  敬天爱人</b>
-			   </span>
-		   </div>
+<div>
+<div>
+           <div>
+              BUSINESS 
+           </div>
+           <div>
+               
+                    <b>服务之道  敬天爱人</b>
+               
+           </div>
 </div>
 
-<div class="floor-content">
-	<div class="floor-content3">
-	   <ul>
-		   <li id="floor_jbox_li1" class="Jbox1_li">
-		       <div  class="business_ho" style="opacity:0;"></div>
-			   <div  class="business_icon business_icon1"  >
-					<a  target="_blank" href="service.html" > <img src="image\business_ac1.png" border="0"/>	</a>
-			   </div>
-			   <div id="floor_jbox_holi1" class="business_icon business_icon2" >
-			         <a target="_blank" href="service.html"><img src="image\business_ho1.png" border="0"/>	</a>
-			   </div>  	 		   
-			   <div class="business_text business_text1">
-					<a target="_blank" href="service.html">	 <b>高端网站定制</b> </a>			
-						   <div class="business_intro">
-							迈创顶尖的创意团队为您量身定制高端品牌网站，用前沿的互联网思维制作交互式的高端网站，不断提升品牌价值。			 					 
-						   </div> 					
-			   </div>			   
-			    <div class="business_text business_text2">
-					<a target="_blank" href="service.html">	 <b>高端网站定制</b>		</a>						
-							<div class="business_intro">
-							   迈创顶尖的创意团队为您量身定制高端品牌网站，用前沿的互联网思维制作交互式的高端网站，不断提升品牌价值。							 
-							 </div>            	
-			   </div>
-		   </li>
-		   
-		   <li id="floor-jbox-li2" class="Jbox1_li">
-		       <div  class="business_ho" style="opacity:0;"></div>
-			   <div class="business_icon business_icon1">
-					 <img src="image\business_ac3.png">			 
-			  </div>  
-			   <div class="business_icon business_icon2">
-					 <img src="image\business_ho3.png">			 
-			  </div>  
-			  
-			  
-			    <div class="business_text business_text1">
-					 <b>移动应用开发</b>			   
-			   <div class="business_intro">
-					为企业提供基于IOS和Android系统的移动应用定制APP开发、手机网站建设，提供移动产品全方位解决方案。			  
-				    </div>
-			   </div>	
-			     <div class="business_text business_text2">
-					 <b>移动应用开发</b>			   
-			   <div class="business_intro">
-					为企业提供基于IOS和Android系统的移动应用定制APP开发、手机网站建设，提供移动产品全方位解决方案。			  
-				    </div>
-			   </div>	
-		   </li>
-		   <li id="floor-jbox-li3" class="Jbox1_li">
-		       <div  class="business_ho" style="opacity:0;"></div>
-			   <div class="business_icon business_icon1">
-					 <img src="image\business_ac4.png">			
-			   </div> 
-			    <div class="business_icon business_icon2">
-					 <img src="image\business_ho4.png">			
-			   </div> 
-			   <div class="business_text business_text1">
-					 <b>UI交互设计</b>			  
-				   <div class="business_intro">
-						迈创顶尖的创意团队为您量身定制高端品牌网站，用前沿的互联网思维制作交互式的高端网站，不断提升品牌价值。			   </div>
-			   </div>	
-			    <div class="business_text business_text2">
-					 <b>UI交互设计</b>			  
-				   <div class="business_intro">
-						迈创顶尖的创意团队为您量身定制高端品牌网站，用前沿的互联网思维制作交互式的高端网站，不断提升品牌价值。			   </div>
-			   </div>	
-		   </li>
-		   <li id="floor-jbox-li4" class="Jbox1_li">
-		       <div  class="business_ho" style="opacity:0;"></div>
-			   <div class="business_icon business_icon1">
-					 <img src="image\business_ac2.png">		
-			   </div>  
-			   <div class="business_icon business_icon2">
-					 <img src="image\business_ho2.png">		
-			   </div> 
-			   <div class="business_text business_text1">
-					 <b>品牌营销策划</b>			   
-			  		 <div class="business_intro">
-							策划+创意+技术，不断提升品牌价值。
-				   </div>
-			   </div>
-			   <div class="business_text business_text2">
-					 <b>品牌营销策划</b>			   
-			  		 <div class="business_intro">
-							策划+创意+技术，不断提升品牌价值。
-				   </div>
-			   </div>
-		   </li>
-	   </ul>
-	</div>
-</div>
-</div><!-- floor 3的结束标签-->
-<!-------------------------------------------------------------下方案列展示--------------------------------------------------------------------- -->
-<div id="anli" class="anli">
-	<div class="container">
-
-		<ul id="filters" class="clearfix">
-			<li><span class="filter active" data-filter="app card icon logo web">All</span></li>
-			<li><span class="filter" data-filter="app">App</span></li>
-			<li><span class="filter" data-filter="card">Card</span></li>
-			<li><span class="filter" data-filter="icon">Icon</span></li>
-			<li><span class="filter" data-filter="logo">Logo</span></li>
-			<li><span class="filter" data-filter="web">Web</span></li>
-		</ul>
-
-		<div id="portfoliolist">
-
-			<div class="portfolio logo" data-cat="logo">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\logo\5.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Bird Document</a>
-							<span class="text-category">Logo</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio app" data-cat="app">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\app\1.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Visual Infography</a>
-							<span class="text-category">APP</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio app" data-cat="app">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\app\1.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Visual Infography</a>
-							<span class="text-category">APP</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio app" data-cat="app">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\app\1.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Visual Infography</a>
-							<span class="text-category">APP</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio app" data-cat="app">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\app\1.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Visual Infography</a>
-							<span class="text-category">APP</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio web" data-cat="web">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\web\4.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Sonor's Design</a>
-							<span class="text-category">Web design</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-			<div class="portfolio app" data-cat="app">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\app\1.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Visual Infography</a>
-							<span class="text-category">APP</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-			<div class="portfolio app" data-cat="app">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\app\1.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Visual Infography</a>
-							<span class="text-category">APP</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-			<div class="portfolio app" data-cat="app">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\app\1.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Visual Infography</a>
-							<span class="text-category">APP</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-			<div class="portfolio app" data-cat="app">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\app\1.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Visual Infography</a>
-							<span class="text-category">APP</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-			<div class="portfolio card" data-cat="card">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\card\1.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Typography Company</a>
-							<span class="text-category">Business card</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio app" data-cat="app">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\app\3.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Weatherette</a>
-							<span class="text-category">APP</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio card" data-cat="card">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\card\4.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">BMF</a>
-							<span class="text-category">Business card</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio card" data-cat="card">
-				<div class="portfolio-wrapper">
-					<img src="img\portfolios\card\5.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Techlion</a>
-							<span class="text-category">Business card</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio logo" data-cat="logo">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\logo\1.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">KittyPic</a>
-							<span class="text-category">Logo</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio app" data-cat="app">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\app\2.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Graph Plotting</a>
-							<span class="text-category">APP</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio card" data-cat="card">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\card\2.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">QR Quick Response</a>
-							<span class="text-category">Business card</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio logo" data-cat="logo">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\logo\6.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Mobi Sock</a>
-							<span class="text-category">Logo</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio logo" data-cat="logo">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\logo\7.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Village Community Church</a>
-							<span class="text-category">Logo</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio icon" data-cat="icon">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\icon\4.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Domino's Pizza</a>
-							<span class="text-category">Icon</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio web" data-cat="web">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\web\3.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Backend Admin</a>
-							<span class="text-category">Web design</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio icon" data-cat="icon">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\icon\1.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Instagram</a>
-							<span class="text-category">Icon</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio web" data-cat="web">
-				<div class="portfolio-wrapper">
-					<img src="img/portfolios/web/2.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Student Guide</a>
-							<span class="text-category">Web design</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio icon" data-cat="icon">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\icon\2.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Scoccer</a>
-							<span class="text-category">Icon</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio icon" data-cat="icon">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\icon\5.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">3D Map</a>
-							<span class="text-category">Icon</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio web" data-cat="web">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\web\1.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Note</a>
-							<span class="text-category">Web design</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio logo" data-cat="logo">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\logo\3.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Native Designers</a>
-							<span class="text-category">Logo</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio logo" data-cat="logo">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\logo\4.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Bookworm</a>
-							<span class="text-category">Logo</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio icon" data-cat="icon">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\icon\3.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Sandwich</a>
-							<span class="text-category">Icon</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio card" data-cat="card">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\card\3.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Reality</a>
-							<span class="text-category">Business card</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio logo" data-cat="logo">
-				<div class="portfolio-wrapper">
-					<img src="image\img\portfolios\logo\2.jpg" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Speciallisterne</a>
-							<span class="text-category">Logo</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
-
-
-		</div>
-
-	</div><!-- container -->
-
+<div>
+    <div>
+       <ul>
+           <li id="floor_jbox_li1">
+               <div></div>
+               <div>
+                    <a href="service.html"> <img src="image%5Cbusiness_ac1.png" border="0">    </a>
+               </div>
+               <div id="floor_jbox_holi1">
+                     <a href="service.html"><img src="image%5Cbusiness_ho1.png" border="0">  </a>
+               </div>              
+               <div>
+                    <a href="service.html">  <b>高端网站定制</b> </a>         
+                           <div>
+                            迈创顶尖的创意团队为您量身定制高端品牌网站，用前沿的互联网思维制作交互式的高端网站，不断提升品牌价值。                                
+                           </div>                   
+               </div>              
+                <div>
+                    <a href="service.html">  <b>高端网站定制</b>      </a>                        
+                            <div>
+                               迈创顶尖的创意团队为您量身定制高端品牌网站，用前沿的互联网思维制作交互式的高端网站，不断提升品牌价值。                             
+                             </div>             
+               </div>
+           </li>
+           
+           <li id="floor-jbox-li2">
+               <div></div>
+               <div>
+                     <img src="image%5Cbusiness_ac3.png">          
+              </div>  
+               <div>
+                     <img src="image%5Cbusiness_ho3.png">          
+              </div>  
+              
+              
+                <div>
+                     <b>移动应用开发</b>             
+               <div>
+                    为企业提供基于IOS和Android系统的移动应用定制APP开发、手机网站建设，提供移动产品全方位解决方案。              
+                    </div>
+               </div>   
+                 <div>
+                     <b>移动应用开发</b>             
+               <div>
+                    为企业提供基于IOS和Android系统的移动应用定制APP开发、手机网站建设，提供移动产品全方位解决方案。              
+                    </div>
+               </div>   
+           </li>
+           <li id="floor-jbox-li3">
+               <div></div>
+               <div>
+                     <img src="image%5Cbusiness_ac4.png">         
+               </div> 
+                <div>
+                     <img src="image%5Cbusiness_ho4.png">         
+               </div> 
+               <div>
+                     <b>UI交互设计</b>            
+                   <div>
+                        迈创顶尖的创意团队为您量身定制高端品牌网站，用前沿的互联网思维制作交互式的高端网站，不断提升品牌价值。              </div>
+               </div>   
+                <div>
+                     <b>UI交互设计</b>            
+                   <div>
+                        迈创顶尖的创意团队为您量身定制高端品牌网站，用前沿的互联网思维制作交互式的高端网站，不断提升品牌价值。              </div>
+               </div>   
+           </li>
+           <li id="floor-jbox-li4">
+               <div></div>
+               <div>
+                     <img src="image%5Cbusiness_ac2.png">     
+               </div>  
+               <div>
+                     <img src="image%5Cbusiness_ho2.png">     
+               </div> 
+               <div>
+                     <b>品牌营销策划</b>             
+                     <div>
+                            策划+创意+技术，不断提升品牌价值。
+                   </div>
+               </div>
+               <div>
+                     <b>品牌营销策划</b>             
+                     <div>
+                            策划+创意+技术，不断提升品牌价值。
+                   </div>
+               </div>
+           </li>
+       </ul>
+    </div>
 </div>
 
-
-<!---------------------------------------------------------隔离层--------------------------------------------------------------------------------->
-	<div id="floor6" class="floor6">
-		<div class="top wd1100">
-			<div class="top_en">
-				Blog
-			</div>
-			<div class="top_cn">
-				   <span class="span_b">
-						<b>我们的圈子</b>
-				   </span>
-			</div>
-		</div>
-
-		<!--............................................下方blog文本布局...........................................  -->
-		<div class="blog">
-			<div class="blog_sel">
-				<!--
-                                    <ul class="blogul_list">
-                                        <div>
-                                        <li >公司新闻</li>
-                                        <li >网络学堂</li>
-                                        <li >建站知识</li>
-                                        </div>
-                                    </ul>
-                -->
-				<a class="" title="公司新闻" href="javascript:;">公司新闻</a>
-				<a class="" title="公司新闻" href="javascript:;">建站知识</a>
-				<a class="" title="公司新闻" href="javascript:;">网络学堂</a>
-			</div>
-
-
-			<div class="blog_celCon cl">
-				<div class="show"  >
-					<div class="blog_1 fl">
-						<div class="blog_img" >
-							<a >
-								<img width="340" height="100" src="image/20150929162941.jpg" alt="2015中秋"/>
-							</a>
-						</div>
-						<div class="blog_infor">
-							<div class="blog_infTop">
-								<div class="blog_time fl">
-									<span class="blog_y">29</span>
-									<span class="blog_day">2016-03</span>
-								</div>
-								<div class="blog_infR fr">
-									<div class="blog_title"><a href="#">2016年51劳动节放假通知</a></div>
-									<div class="blog_wel">
-										<span class="blog_wel1">joyma</span>
-										<span class="blog_wel2">2015-05-01</span>
-									</div>
-								</div>
-							</div>
-							<div class="blog_intro cl">2015年中秋国庆节放假通知， 2015年中秋节将至，根据国家法定假日规定，综合公司实际情况，具体放假时间安排如下:放假时间：09月27
-								日（星期日）放假，09月26日（星期六）正常上班
-							</div>
-						</div>
-
-					</div>
-					<div class="blog_r fr">
-						<div class="blog_list">
-							<ul>
-								<li >
-									<a title="中标：雷曼股份网站改版" href="#">
-                                      <span class="blog_Rtime fl">
-                                              <b>22</b>
-										       <em>2015-09</em>
-									  </span>
-									  <span class="blog_Rmore fr">
-                                           <b>中标：雷曼股份网站改版</b>
-										  <span >深圳高端网站建设公司卓越迈创在众多行业中脱颖而出，成功中标雷曼股份网站建设项目</span>
-									  </span>
-									</a>
-								</li>
-								<li>22</li>
-								<li>33</li>
-								<li>44</li>
-								<li>55</li>
-								<li>66</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="hide">
-					<div class="blog_1 fl">
-						<div class="blog_img" >
-							<a >
-								<img width="340" height="100" src="image/20150929165301.jpg" alt="2015中秋"/>
-							</a>
-						</div>
-						<div class="blog_infor">
-							<div class="blog_infTop">
-								<div class="blog_time fl">
-									<span class="blog_y">30</span>
-									<span class="blog_day">2020-03</span>
-								</div>
-
-								<div class="blog_infR fr">
-									<div class="blog_title"><a href="#">2020年51劳动节放假通知</a></div>
-									<div class="blog_wel">
-										<span class="blog_wel1">joyma</span>
-										<span class="blog_wel2">2015-05-01</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="blog_intro cl">2015年中秋国庆节放假通知， 2015年中秋节将至，根据国家法定假日规定，综合公司实际情况，具体放假时间安排如下:放假时间：09月27
-								日（星期日）放假，09月26日（星期六）正常上班
-							</div>
-						</div>
-
-
-					</div>
-					<div class="blog_r fr">
-						<div class="blog_list">
-							<ul>
-								<li >
-									<a title="中标：雷曼股份网站改版" href="#">
-                                      <span class="blog_Rtime fl">
-                                              <b>28</b>
-										       <em>2016-09</em>
-									  </span>
-									  <span class="blog_Rmore fr">
-                                           <b>王标：雷曼股份网站改版</b>
-										  <span >成功中标雷曼股份网站建设项目，深圳高端网站建设公司卓越迈创在众多行业中脱颖而出</span>
-									  </span>
-									</a>
-								</li>
-								<li>aa</li>
-								<li>bb</li>
-								<li>cc</li>
-								<li>dd</li>
-								<li>ee</li>
-							</ul>
-						</div>
-					</div>
-
-				</div>
-			</div> <!-- blogCelcon  结束标签-->
-		</div><!-- blog结束标签-->
-	</div><!--floor6 结束标签 -->
-
-
-<!---------------------------------------------------------------------- 下方floor5------------------------------------------------------------------->
-
-	<div id="floor5" class="floor5">
-         <div class="team">
-			 <div class="team_ask">我对生活的态度永远怀着感恩，我习惯抱着思考去设计，设计就是放逐自己的灵魂，让我的思想在客户的内心找到共鸣</div>
-			 <div class="team_move">
-				 <a class="team_l" href="###"></a>
-				 <a class="team_r" href="###"></a>
-				 <div class="team_Mlist">
-                         <ul style="width:20232px;">
-
-								 <li class="" data-ask="从事设计10年，用我的经验，为您提供最专业的服务。">
-									 <img width="80" height="80" src="image/preson/20150814183841.png"/>
-									 <span class="team_job">Tonye-Mary</span>
-								 </li>
-								 <li class="" data-ask="程序员是苦逼的，但我就是热爱。">
-									 <img width="80" height="80" src="image/preson/20150814183022.png"/>
-									 <span class="team_job">Tonye-Honey</span>
-								 </li>
-								 <li class="" data-ask="我爱设计，我为人人。">
-									 <img width="80" height="80" src="image/preson/20150814183433.png"/>
-									 <span class="team_job">Tonye-Joky</span>
-								 </li>
-								 <li class="" data-ask="励志做个好前端。">
-									 <img width="80" height="80" src="image/preson/20150814182756.png"/>
-									 <span class="team_job">Tonye-Joky</span>
-								 </li>
-								 <li class="" data-ask="年轻就是任性。">
-									 <img width="80" height="80" src="image/preson/20150829160532.png"/>
-									 <span class="team_job">Tonye-Joky</span>
-								 </li>
-								 <li class="" data-ask="我想信我可以，致力打造好的交互平台。">
-									 <img width="80" height="80" src="image/preson/20150814183433.png"/>
-									 <span class="team_job">Tonye-Joky</span>
-								 </li>
-								 <li class="" data-ask="不叹息，不放弃">
-									 <img width="80" height="80" src="image/preson/20150829155743.png"/>
-									 <span class="team_job">Tonye-Joky</span>
-								 </li>
-						 </ul>
-				 </div>
-			 </div>
-		 </div>
-	</div>
+<p></p>
+</div>&lt;!-- floor 3的结束标签--&gt;
 
 
 
-<!-------------------------------------------------下方floor7 ------------------------------------------------------->
-	<div id="floor7" class="floor7 floor7_img">
-		<div class="top wd1100">
-			<div class="top_en">
+<div id="anli">
+    <div>
 
-			</div>
-			<div class="top_cn">
-				   <span class="span_b">
-						<b>联系我们</b>
-				   </span>
-			</div>
-			<div class="contact_ask">一切良好的工作开始，都徐相互之间的沟通搭桥，欢迎来XX大家庭</div>
-		</div>
+        <ul id="filters">
+            <li>All</li>
+            <li>App</li>
+            <li>Card</li>
+            <li>Icon</li>
+            <li>Logo</li>
+            <li>Web</li>
+        </ul>
 
-		<div class="contact wd1100">
-			<ul>
-				<li >
-					<a href="###">
-						<span class="contact_icon1 contact_icon"></span>
-						<span >0755-54654678</span>
-					</a>
-				</li>
-				<li >
-					<a href="###">
-						<span class="contact_icon2 contact_icon"></span>
-						<span >0755-54654678</span>
-					</a>
-				</li>
-				<li >
-					<a href="###">
-						<span class="contact_icon3 contact_icon"></span>
-						<span >0755-54654678</span>
-					</a>
-				</li>
-				<li >
-					<a href="###">
-						<span class="contact_icon4 contact_icon"></span>
-						<span >0755-54654678</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+        <div id="portfoliolist">
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Clogo%5C5.jpg" alt="">
+                    <div>
+                        <div>
+                            Bird Document
+                            Logo
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Capp%5C1.jpg" alt="">
+                    <div>
+                        <div>
+                            Visual Infography
+                            APP
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Capp%5C1.jpg" alt="">
+                    <div>
+                        <div>
+                            Visual Infography
+                            APP
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Capp%5C1.jpg" alt="">
+                    <div>
+                        <div>
+                            Visual Infography
+                            APP
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Capp%5C1.jpg" alt="">
+                    <div>
+                        <div>
+                            Visual Infography
+                            APP
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Cweb%5C4.jpg" alt="">
+                    <div>
+                        <div>
+                            Sonor's Design
+                            Web design
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Capp%5C1.jpg" alt="">
+                    <div>
+                        <div>
+                            Visual Infography
+                            APP
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Capp%5C1.jpg" alt="">
+                    <div>
+                        <div>
+                            Visual Infography
+                            APP
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Capp%5C1.jpg" alt="">
+                    <div>
+                        <div>
+                            Visual Infography
+                            APP
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Capp%5C1.jpg" alt="">
+                    <div>
+                        <div>
+                            Visual Infography
+                            APP
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Ccard%5C1.jpg" alt="">
+                    <div>
+                        <div>
+                            Typography Company
+                            Business card
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Capp%5C3.jpg" alt="">
+                    <div>
+                        <div>
+                            Weatherette
+                            APP
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Ccard%5C4.jpg" alt="">
+                    <div>
+                        <div>
+                            BMF
+                            Business card
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="img%5Cportfolios%5Ccard%5C5.jpg" alt="">
+                    <div>
+                        <div>
+                            Techlion
+                            Business card
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Clogo%5C1.jpg" alt="">
+                    <div>
+                        <div>
+                            KittyPic
+                            Logo
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Capp%5C2.jpg" alt="">
+                    <div>
+                        <div>
+                            Graph Plotting
+                            APP
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Ccard%5C2.jpg" alt="">
+                    <div>
+                        <div>
+                            QR Quick Response
+                            Business card
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Clogo%5C6.jpg" alt="">
+                    <div>
+                        <div>
+                            Mobi Sock
+                            Logo
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Clogo%5C7.jpg" alt="">
+                    <div>
+                        <div>
+                            Village Community Church
+                            Logo
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Cicon%5C4.jpg" alt="">
+                    <div>
+                        <div>
+                            Domino's Pizza
+                            Icon
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Cweb%5C3.jpg" alt="">
+                    <div>
+                        <div>
+                            Backend Admin
+                            Web design
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Cicon%5C1.jpg" alt="">
+                    <div>
+                        <div>
+                            Instagram
+                            Icon
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="img/portfolios/web/2.jpg" alt="">
+                    <div>
+                        <div>
+                            Student Guide
+                            Web design
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Cicon%5C2.jpg" alt="">
+                    <div>
+                        <div>
+                            Scoccer
+                            Icon
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Cicon%5C5.jpg" alt="">
+                    <div>
+                        <div>
+                            3D Map
+                            Icon
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Cweb%5C1.jpg" alt="">
+                    <div>
+                        <div>
+                            Note
+                            Web design
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Clogo%5C3.jpg" alt="">
+                    <div>
+                        <div>
+                            Native Designers
+                            Logo
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Clogo%5C4.jpg" alt="">
+                    <div>
+                        <div>
+                            Bookworm
+                            Logo
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Cicon%5C3.jpg" alt="">
+                    <div>
+                        <div>
+                            Sandwich
+                            Icon
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Ccard%5C3.jpg" alt="">
+                    <div>
+                        <div>
+                            Reality
+                            Business card
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image%5Cimg%5Cportfolios%5Clogo%5C2.jpg" alt="">
+                    <div>
+                        <div>
+                            Speciallisterne
+                            Logo
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<pre><code>&lt;div id="floor6" class="floor6"&gt;
+    &lt;div class="top wd1100"&gt;
+        &lt;div class="top_en"&gt;
+            Blog
+        &lt;/div&gt;
+        &lt;div class="top_cn"&gt;
+               &lt;span class="span_b"&gt;
+                    &lt;b&gt;我们的圈子&lt;/b&gt;
+               &lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!--............................................下方blog文本布局...........................................  --&gt;
+    &lt;div class="blog"&gt;
+        &lt;div class="blog_sel"&gt;
+            &lt;!--
+                                &lt;ul class="blogul_list"&gt;
+                                    &lt;div&gt;
+                                    &lt;li &gt;公司新闻&lt;/li&gt;
+                                    &lt;li &gt;网络学堂&lt;/li&gt;
+                                    &lt;li &gt;建站知识&lt;/li&gt;
+                                    &lt;/div&gt;
+                                &lt;/ul&gt;
+            --&gt;
+            &lt;a class="" title="公司新闻" href="javascript:;"&gt;公司新闻&lt;/a&gt;
+            &lt;a class="" title="公司新闻" href="javascript:;"&gt;建站知识&lt;/a&gt;
+            &lt;a class="" title="公司新闻" href="javascript:;"&gt;网络学堂&lt;/a&gt;
+        &lt;/div&gt;
+
+
+        &lt;div class="blog_celCon cl"&gt;
+            &lt;div class="show"  &gt;
+                &lt;div class="blog_1 fl"&gt;
+                    &lt;div class="blog_img" &gt;
+                        &lt;a &gt;
+                            &lt;img width="340" height="100" src="image/20150929162941.jpg" alt="2015中秋"/&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class="blog_infor"&gt;
+                        &lt;div class="blog_infTop"&gt;
+                            &lt;div class="blog_time fl"&gt;
+                                &lt;span class="blog_y"&gt;29&lt;/span&gt;
+                                &lt;span class="blog_day"&gt;2016-03&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;div class="blog_infR fr"&gt;
+                                &lt;div class="blog_title"&gt;&lt;a href="#"&gt;2016年51劳动节放假通知&lt;/a&gt;&lt;/div&gt;
+                                &lt;div class="blog_wel"&gt;
+                                    &lt;span class="blog_wel1"&gt;joyma&lt;/span&gt;
+                                    &lt;span class="blog_wel2"&gt;2015-05-01&lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="blog_intro cl"&gt;2015年中秋国庆节放假通知， 2015年中秋节将至，根据国家法定假日规定，综合公司实际情况，具体放假时间安排如下:放假时间：09月27
+                            日（星期日）放假，09月26日（星期六）正常上班
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+                &lt;div class="blog_r fr"&gt;
+                    &lt;div class="blog_list"&gt;
+                        &lt;ul&gt;
+                            &lt;li &gt;
+                                &lt;a title="中标：雷曼股份网站改版" href="#"&gt;
+                                  &lt;span class="blog_Rtime fl"&gt;
+                                          &lt;b&gt;22&lt;/b&gt;
+                                           &lt;em&gt;2015-09&lt;/em&gt;
+                                  &lt;/span&gt;
+                                  &lt;span class="blog_Rmore fr"&gt;
+                                       &lt;b&gt;中标：雷曼股份网站改版&lt;/b&gt;
+                                      &lt;span &gt;深圳高端网站建设公司卓越迈创在众多行业中脱颖而出，成功中标雷曼股份网站建设项目&lt;/span&gt;
+                                  &lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;22&lt;/li&gt;
+                            &lt;li&gt;33&lt;/li&gt;
+                            &lt;li&gt;44&lt;/li&gt;
+                            &lt;li&gt;55&lt;/li&gt;
+                            &lt;li&gt;66&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="hide"&gt;
+                &lt;div class="blog_1 fl"&gt;
+                    &lt;div class="blog_img" &gt;
+                        &lt;a &gt;
+                            &lt;img width="340" height="100" src="image/20150929165301.jpg" alt="2015中秋"/&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class="blog_infor"&gt;
+                        &lt;div class="blog_infTop"&gt;
+                            &lt;div class="blog_time fl"&gt;
+                                &lt;span class="blog_y"&gt;30&lt;/span&gt;
+                                &lt;span class="blog_day"&gt;2020-03&lt;/span&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="blog_infR fr"&gt;
+                                &lt;div class="blog_title"&gt;&lt;a href="#"&gt;2020年51劳动节放假通知&lt;/a&gt;&lt;/div&gt;
+                                &lt;div class="blog_wel"&gt;
+                                    &lt;span class="blog_wel1"&gt;joyma&lt;/span&gt;
+                                    &lt;span class="blog_wel2"&gt;2015-05-01&lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="blog_intro cl"&gt;2015年中秋国庆节放假通知， 2015年中秋节将至，根据国家法定假日规定，综合公司实际情况，具体放假时间安排如下:放假时间：09月27
+                            日（星期日）放假，09月26日（星期六）正常上班
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+
+                &lt;/div&gt;
+                &lt;div class="blog_r fr"&gt;
+                    &lt;div class="blog_list"&gt;
+                        &lt;ul&gt;
+                            &lt;li &gt;
+                                &lt;a title="中标：雷曼股份网站改版" href="#"&gt;
+                                  &lt;span class="blog_Rtime fl"&gt;
+                                          &lt;b&gt;28&lt;/b&gt;
+                                           &lt;em&gt;2016-09&lt;/em&gt;
+                                  &lt;/span&gt;
+                                  &lt;span class="blog_Rmore fr"&gt;
+                                       &lt;b&gt;王标：雷曼股份网站改版&lt;/b&gt;
+                                      &lt;span &gt;成功中标雷曼股份网站建设项目，深圳高端网站建设公司卓越迈创在众多行业中脱颖而出&lt;/span&gt;
+                                  &lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;aa&lt;/li&gt;
+                            &lt;li&gt;bb&lt;/li&gt;
+                            &lt;li&gt;cc&lt;/li&gt;
+                            &lt;li&gt;dd&lt;/li&gt;
+                            &lt;li&gt;ee&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt; &lt;!-- blogCelcon  结束标签--&gt;
+    &lt;/div&gt;&lt;!-- blog结束标签--&gt;
+&lt;/div&gt;&lt;!--floor6 结束标签 --&gt;
+</code></pre>
+
+
+
+<pre><code>&lt;div id="floor5" class="floor5"&gt;
+     &lt;div class="team"&gt;
+         &lt;div class="team_ask"&gt;我对生活的态度永远怀着感恩，我习惯抱着思考去设计，设计就是放逐自己的灵魂，让我的思想在客户的内心找到共鸣&lt;/div&gt;
+         &lt;div class="team_move"&gt;
+             &lt;a class="team_l" href="###"&gt;&lt;/a&gt;
+             &lt;a class="team_r" href="###"&gt;&lt;/a&gt;
+             &lt;div class="team_Mlist"&gt;
+                     &lt;ul style="width:20232px;"&gt;
+
+                             &lt;li class="" data-ask="从事设计10年，用我的经验，为您提供最专业的服务。"&gt;
+                                 &lt;img width="80" height="80" src="image/preson/20150814183841.png"/&gt;
+                                 &lt;span class="team_job"&gt;Tonye-Mary&lt;/span&gt;
+                             &lt;/li&gt;
+                             &lt;li class="" data-ask="程序员是苦逼的，但我就是热爱。"&gt;
+                                 &lt;img width="80" height="80" src="image/preson/20150814183022.png"/&gt;
+                                 &lt;span class="team_job"&gt;Tonye-Honey&lt;/span&gt;
+                             &lt;/li&gt;
+                             &lt;li class="" data-ask="我爱设计，我为人人。"&gt;
+                                 &lt;img width="80" height="80" src="image/preson/20150814183433.png"/&gt;
+                                 &lt;span class="team_job"&gt;Tonye-Joky&lt;/span&gt;
+                             &lt;/li&gt;
+                             &lt;li class="" data-ask="励志做个好前端。"&gt;
+                                 &lt;img width="80" height="80" src="image/preson/20150814182756.png"/&gt;
+                                 &lt;span class="team_job"&gt;Tonye-Joky&lt;/span&gt;
+                             &lt;/li&gt;
+                             &lt;li class="" data-ask="年轻就是任性。"&gt;
+                                 &lt;img width="80" height="80" src="image/preson/20150829160532.png"/&gt;
+                                 &lt;span class="team_job"&gt;Tonye-Joky&lt;/span&gt;
+                             &lt;/li&gt;
+                             &lt;li class="" data-ask="我想信我可以，致力打造好的交互平台。"&gt;
+                                 &lt;img width="80" height="80" src="image/preson/20150814183433.png"/&gt;
+                                 &lt;span class="team_job"&gt;Tonye-Joky&lt;/span&gt;
+                             &lt;/li&gt;
+                             &lt;li class="" data-ask="不叹息，不放弃"&gt;
+                                 &lt;img width="80" height="80" src="image/preson/20150829155743.png"/&gt;
+                                 &lt;span class="team_job"&gt;Tonye-Joky&lt;/span&gt;
+                             &lt;/li&gt;
+                     &lt;/ul&gt;
+             &lt;/div&gt;
+         &lt;/div&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+
+<pre><code>&lt;div id="floor7" class="floor7 floor7_img"&gt;
+    &lt;div class="top wd1100"&gt;
+        &lt;div class="top_en"&gt;
+
+        &lt;/div&gt;
+        &lt;div class="top_cn"&gt;
+               &lt;span class="span_b"&gt;
+                    &lt;b&gt;联系我们&lt;/b&gt;
+               &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="contact_ask"&gt;一切良好的工作开始，都徐相互之间的沟通搭桥，欢迎来XX大家庭&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="contact wd1100"&gt;
+        &lt;ul&gt;
+            &lt;li &gt;
+                &lt;a href="###"&gt;
+                    &lt;span class="contact_icon1 contact_icon"&gt;&lt;/span&gt;
+                    &lt;span &gt;0755-54654678&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li &gt;
+                &lt;a href="###"&gt;
+                    &lt;span class="contact_icon2 contact_icon"&gt;&lt;/span&gt;
+                    &lt;span &gt;0755-54654678&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li &gt;
+                &lt;a href="###"&gt;
+                    &lt;span class="contact_icon3 contact_icon"&gt;&lt;/span&gt;
+                    &lt;span &gt;0755-54654678&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li &gt;
+                &lt;a href="###"&gt;
+                    &lt;span class="contact_icon4 contact_icon"&gt;&lt;/span&gt;
+                    &lt;span &gt;0755-54654678&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 
 
 
 
 
+<p>
+</p>
+</div>
 
-<script>
- $(document).ready(function(){
-   $('.floor-content3 li').hover(function(){
-    $(this).find('.business_ho').fadeTo(400,1);
-    $(this).find('.business_icon1').animate({left:'170px'},800);
-    $(this).find('.business_icon2').animate({left:'0px'},800);
-	$(this).find('.business_text1').animate({left:'-210px'},800);
-	$(this).find('.business_text2').animate({left:'0px'},800); 
-  },function(){
-    $('.business_ho').fadeTo(400,0);
-    $(this).find('.business_icon1').animate({left:'0px'},800);
-    $(this).find('.business_icon2').animate({left:'-170px'},800);
-	$(this).find('.business_text1').animate({left:'0px'},800);
-	$(this).find('.business_text2').animate({left:'210px'},800); 
-  });
+      <footer class="site-footer">
 
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
 
+    </section>
 
-
-	 /* -------------------------------------下方floor5的js--------------------------------*/
- $('.team_Mlist li').hover(function(){
-	 var team_text = $(this).attr('data-ask')
-	 $('.team_ask').html(team_text)
-	 $(this).addClass('team_on').siblings().removeClass('team_on')
-
- })
-
-	 var l = $(".team_Mlist li").length;
-	 $(".team_Mlist ul").width(1124 * l);
-	 var newsIndex = 1;
-	 $(".team_r").click(function () {
-		 if (newsIndex < l) {
-			 var $wrap = $('.team_Mlist ul')
-			 $wrap.stop(true, true).animate({
-				 marginLeft: -newsIndex * 140
-			 }, 800);
-			 $('.team_Mlist ul li').eq(newsIndex).addClass('team_on').siblings().removeClass('team_on')
-			 var team_index = $('.team_Mlist ul li').eq(newsIndex).attr('data-ask')
-			 $('.team_ask').html(team_index)
-			 newsIndex++
-		 }
-	 });
-
-	 $(".team_l").click(function () {
-		 if (newsIndex > 1) {
-			 var $wrap = $('.team_Mlist ul')
-			 $wrap.stop(true, true).animate({
-				 marginLeft: -(newsIndex-2) * 140
-			 }, 800);
-			 $('.team_Mlist ul li').eq(newsIndex-2).addClass('team_on').siblings().removeClass('team_on')
-			 var team_index = $('.team_Mlist ul li').eq(newsIndex-2).attr('data-ask')
-			 $('.team_ask').html(team_index)
-			 newsIndex--
-		 }
-	 })
-
-
-	 /*------------------------------下方我们的圈子blog js部分------------------------------*/
-	 var $blog_this = $(".blog_sel a");
-	 $blog_this.hover(function(){
-		 $(this).addClass('blog_on').siblings().removeClass('blog_on');
-		 var blog_index = $blog_this.index(this);     /*创建当前点击li所对应的li元素的索引*/
-		 $(".blog_celCon>div").eq(blog_index).fadeIn(150).siblings().hide();    /*当前li点击对应索引显示同辈元素隐藏*/
-	 })
- });
-</script>
-<script src="jqueryjs/index.js"></script>
-</body>
+  
+  </body>
 </html>

@@ -1,2 +1,2 @@
 # Home
-http://yige142.github.Home
+http://yige142.Home.git

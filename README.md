@@ -1,2 +1,2 @@
 # Home
-http://Home.github.io
+http://home.github.io
